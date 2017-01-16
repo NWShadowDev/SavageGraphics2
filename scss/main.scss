@@ -1,4 +1,8 @@
 $transparent-green : rgba(72, 91, 53, 0.5);
+$header-inner : #B8E986;
+$header-shadow: #9BB65D;
+$black : #000;
+$white: #fff;
 
 
 body {
@@ -8,4 +12,47 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.well {
+  background: transparent;
+  border: none;
+  h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 90pt;
+    color: $header-inner;
+    text-shadow: 3px 3px 10px $header-shadow;
+    z-index: -1;
+    text-align: center;
+    @media screen and (max-width: 480px) {
+      font-size: 40pt;
+    }
+  }
+}
+
+img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+#welcome {
+  text-align: center;
+  h2 {
+    color: $header-inner;
+    font-family: sans-serif;
+    text-shadow: 3px 3px 10px $header-shadow;
+  }
+  h3 {
+    font-family: monospace;
+    color: $white;
+  }
+  .btn {
+    background-color: $header-inner;
+    color: black;
+    margin-top: 50px;
+    &:hover {
+      color: white;
+      background-color: $header-shadow;
+    }
+  }
 }
