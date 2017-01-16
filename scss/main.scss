@@ -13,46 +13,79 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.well {
-  background: transparent;
-  border: none;
-  h1 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 90pt;
-    color: $header-inner;
-    text-shadow: 3px 3px 10px $header-shadow;
-    z-index: -1;
+.logo {
+  img {
     text-align: center;
-    @media screen and (max-width: 480px) {
-      font-size: 40pt;
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    padding-bottom: 10px;
+  }
+}
+
+#main {
+  color: white;
+  margin: 0 auto;
+  .row {
+    margin: 0 auto;
+    .col-md-4 {
+      border: 3px solid $header-shadow;
+      text-align: center;
+      padding: 10px;
+      margin: 20px;
+      position: relative;
+      left: 150px;
+      background: rgba(17,69,17, 0.2);
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  h3 {
+    font-family: monospace;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(17,69,17, 0.6);
+    border: 3px solid $header-shadow;
+    @media screen and (max-width: 425px) {
+      font-size: 14pt;
+      padding: 5px;
+    }
+  }
+  h4 {
+    @media screen and (max-width: 425px) {
+      text-align: center;
+    }
+  }
+  h4 a {
+    color: $header-inner;
+    &:hover {
+      color: white;
     }
   }
 }
 
-img {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
-#welcome {
-  text-align: center;
-  h2 {
-    color: $header-inner;
-    font-family: sans-serif;
-    text-shadow: 3px 3px 10px $header-shadow;
+.row {
+  .thumbnail {
+    background: $transparent-green;
+    border: 3px solid $header-inner;
   }
-  h3 {
-    font-family: monospace;
-    color: $white;
-  }
-  .btn {
-    background-color: $header-inner;
-    color: black;
-    margin-top: 50px;
-    &:hover {
+  .caption {
+    text-align: center;
+
+    h3 {
+      font-family: 'Shadows Into Light', cursive;
+      color: $header-inner;
+      font-size: 26pt;
+    }
+    p {
+      margin-bottom: 20px;
       color: white;
-      background-color: $header-shadow;
     }
   }
 }

@@ -1,0 +1,45 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+  background-image: url("../img/forest.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.well {
+  background: transparent;
+  border: none; }
+  .well h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 90pt;
+    color: #B8E986;
+    text-shadow: 3px 3px 10px #9BB65D;
+    z-index: -1;
+    text-align: center; }
+    @media screen and (max-width: 480px) {
+      .well h1 {
+        font-size: 40pt; } }
+
+img {
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
+
+#welcome {
+  text-align: center; }
+  #welcome h2 {
+    color: #B8E986;
+    font-family: sans-serif;
+    text-shadow: 3px 3px 10px #9BB65D; }
+  #welcome h3 {
+    font-family: monospace;
+    color: #fff; }
+  #welcome .btn {
+    background-color: #B8E986;
+    color: black;
+    margin-top: 50px; }
+    #welcome .btn:hover {
+      color: white;
+      background-color: #9BB65D; }
+
+/*# sourceMappingURL=index.css.map */

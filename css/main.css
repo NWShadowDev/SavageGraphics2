@@ -6,40 +6,62 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.well {
-  background: transparent;
-  border: none; }
-  .well h1 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 90pt;
-    color: #B8E986;
-    text-shadow: 3px 3px 10px #9BB65D;
-    z-index: -1;
-    text-align: center; }
-    @media screen and (max-width: 480px) {
-      .well h1 {
-        font-size: 40pt; } }
-
-img {
-  display: block;
+.logo img {
   text-align: center;
-  margin: 0 auto; }
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  padding-bottom: 10px; }
 
-#welcome {
-  text-align: center; }
-  #welcome h2 {
-    color: #B8E986;
-    font-family: sans-serif;
-    text-shadow: 3px 3px 10px #9BB65D; }
-  #welcome h3 {
+#main {
+  color: white;
+  margin: 0 auto; }
+  #main .row {
+    margin: 0 auto; }
+    #main .row .col-md-4 {
+      border: 3px solid #9BB65D;
+      text-align: center;
+      padding: 10px;
+      margin: 20px;
+      position: relative;
+      left: 150px;
+      background: rgba(17, 69, 17, 0.2); }
+      #main .row .col-md-4 img {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        width: 100px;
+        height: 100px; }
+  #main h3 {
     font-family: monospace;
-    color: #fff; }
-  #welcome .btn {
-    background-color: #B8E986;
-    color: black;
-    margin-top: 50px; }
-    #welcome .btn:hover {
-      color: white;
-      background-color: #9BB65D; }
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(17, 69, 17, 0.6);
+    border: 3px solid #9BB65D; }
+    @media screen and (max-width: 425px) {
+      #main h3 {
+        font-size: 14pt;
+        padding: 5px; } }
+  @media screen and (max-width: 425px) {
+    #main h4 {
+      text-align: center; } }
+  #main h4 a {
+    color: #B8E986; }
+    #main h4 a:hover {
+      color: white; }
+
+.row .thumbnail {
+  background: rgba(72, 91, 53, 0.5);
+  border: 3px solid #B8E986; }
+.row .caption {
+  text-align: center; }
+  .row .caption h3 {
+    font-family: 'Shadows Into Light', cursive;
+    color: #B8E986;
+    font-size: 26pt; }
+  .row .caption p {
+    margin-bottom: 20px;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
