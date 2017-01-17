@@ -46,11 +46,27 @@ body {
   @media screen and (max-width: 425px) {
     #main h4 {
       text-align: center; } }
+  @media screen and (max-width: 768px) {
+    #main h4 {
+      text-align: center; } }
+  @media screen and (min-width: 1024px) {
+    #main h4 {
+      text-align: center; } }
   #main h4 a {
     color: #B8E986; }
     #main h4 a:hover {
       color: white; }
 
+@media screen and (max-width: 768px) {
+  .row {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin: 0 auto; } }
+@media screen and (min-width: 1024px) {
+  .row {
+    height: 50%;
+    width: 100%; } }
 .row .thumbnail {
   background: rgba(72, 91, 53, 0.5);
   border: 3px solid #B8E986; }

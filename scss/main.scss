@@ -61,6 +61,12 @@ body {
     @media screen and (max-width: 425px) {
       text-align: center;
     }
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1024px) {
+      text-align: center;
+    }
   }
   h4 a {
     color: $header-inner;
@@ -71,6 +77,16 @@ body {
 }
 
 .row {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 50%;
+    width: 100%;
+  }
   .thumbnail {
     background: $transparent-green;
     border: 3px solid $header-inner;
