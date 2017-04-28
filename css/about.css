@@ -1,0 +1,99 @@
+html {
+  height: 100%; }
+
+body {
+  background-image: url("../img/forest.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.container {
+  width: 100%;
+  padding: 0; }
+  .container .well {
+    background-color: transparent;
+    border: none; }
+    .container .well h3 {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 40pt;
+      color: #B8E986;
+      text-shadow: 3px 3px 10px #9BB65D;
+      z-index: -1; }
+    .container .well img {
+      position: absolute;
+      width: 10%;
+      height: auto; }
+  .container #nav ul li {
+    list-style-type: none;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 24pt;
+    display: inline-flex;
+    margin: 0 10px 0 10px; }
+    .container #nav ul li a {
+      color: #000;
+      text-shadow: 3px 3px 10px #9BB65D; }
+      .container #nav ul li a:hover {
+        text-decoration: none;
+        color: #fff;
+        text-shadow: 3px 3px 10px #9BB65D; }
+  .container #main #picture {
+    margin: 0 auto;
+    margin-left: 15%;
+    transform: rotate(10deg);
+    width: 300px;
+    height: 400px;
+    background-image: url("../img/profile.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 3px solid #9BB65D; }
+  .container #main #about-text {
+    z-index: 2;
+    background: rgba(72, 91, 53, 0.5);
+    padding: 10px;
+    overflow: scroll;
+    float: right;
+    right: 200px;
+    bottom: 400px;
+    color: white;
+    position: relative;
+    width: 500px;
+    height: 500px; }
+    .container #main #about-text h3 {
+      font-family: 'Shadows Into Light', cursive; }
+    .container #main #about-text .underline {
+      text-decoration: underline; }
+    .container #main #about-text li {
+      list-style-type: none;
+      font-family: sans-serif; }
+
+@media screen and (max-width: 768px) {
+  .well {
+    width: 100%; }
+    .well h3 {
+      text-align: center;
+      margin: 10px auto; }
+    .well img {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+      height: auto; }
+
+  #nav ul {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px; }
+    #nav ul li a {
+      font-size: 16pt;
+      margin: 0 auto; }
+
+  #main .row .col-md-4 {
+    left: auto; }
+  #main h3 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 14pt; }
+  #main #about-text {
+    color: red; } }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,140 @@
+$transparent-green : rgba(72, 91, 53, 0.5);
+$header-inner : #B8E986;
+$header-shadow: #9BB65D;
+$black : #000;
+$white: #fff;
+
+html {
+  height: 100%;
+}
+body {
+  background-image: url('../img/forest.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+// main container
+.container {
+  width: 100%;
+  padding: 0;
+  //base well class style
+  .well {
+    background-color: transparent;
+    border: none;
+    h3 {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 40pt;
+      color: $header-inner;
+      text-shadow: 3px 3px 10px $header-shadow;
+      z-index: -1;
+    }
+    img {
+      position: absolute;
+      width: 10%;
+      height: auto;
+    }
+  }
+  #nav {
+    ul {
+      li {
+        list-style-type: none;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 24pt;
+        display: inline-flex;
+        margin: 0 10px 0 10px;
+        a {
+          color: $black;
+          text-shadow: 3px 3px 10px $header-shadow;
+          &:hover {
+            text-decoration: none;
+            color: $white;
+            text-shadow: 3px 3px 10px $header-shadow;
+          }
+        }
+      }
+    }
+  }
+  #main {
+    #picture {
+      margin: 0 auto;
+      margin-left: 15%;
+      transform: rotate(10deg);
+      width: 300px;
+      height: 400px;
+      background-image: url('../img/profile.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 3px solid $header-shadow;
+    }
+    #about-text {
+      z-index: 2;
+      background: $transparent-green;
+      padding: 10px;
+      overflow: scroll;
+      float: right;
+      right: 200px;
+      bottom: 400px;
+      color: white;
+      position: relative;
+      width: 500px;
+      height: 500px;
+      h3 {
+        font-family: 'Shadows Into Light', cursive;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      li {
+        list-style-type: none;
+        font-family: sans-serif;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .well {
+    width: 100%;
+    h3 {
+      text-align: center;
+      margin: 10px auto;
+
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+      height: auto;
+    }
+  }
+  #nav {
+    ul {
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 10px;
+      li {
+        a {
+          font-size: 16pt;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  #main {
+    .row {
+      .col-md-4 {
+        left: auto;
+      }
+    }
+    h3 {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      font-size: 14pt;
+    }
+    #about-text {
+      color: red;
+    }
+  }
+}

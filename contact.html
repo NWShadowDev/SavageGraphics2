@@ -6,7 +6,7 @@
     <!-- Bootstrap CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/about.css" media="screen" title="no title" charset="utf-8">
     <title>Savage Graphics - Amber Farrington</title>
   </head>
   <body>
@@ -20,23 +20,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Savage Graphics</a>
+          <a class="navbar-brand" href="main.html">Savage Graphics</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="photo-gallery.html">Photography</a></li>
+                <li><a href="vectory-gallery.html">Vector Graphics</a></li>
+                <li><a href="other-gallery.html">Other Mediums</a></li>
               </ul>
             </li>
           </ul>
@@ -45,7 +41,25 @@
     </nav>
     <!--Main Content-->
     <div class="container">
-
+      <form>
+             <h2>Contact Me!</h2>
+             <h3>Fill out the form below or Contact me Via:</h3>
+             <h4>Email: <a href="mailto:amberf0712@outlook.com?Subject=Hello">Here</a></h4>
+             <h4>Github: <a target="_blank" href="https://github.com/NWShadowDev">Profile</a></h4>
+             <h4>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/alphadesigner">Profile</a></h4>
+             <div class="form-group">
+               <label for="exampleInputEmail1">Email address</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your Email">
+             </div>
+             <div class="form-group">
+               <label for="exampleInputSubject1">Subject</label>
+               <input class="form-control" id="exampleInputSubject1" placeholder="What do you want to ask?">
+             </div>
+             <div class="form-group">
+               <textarea name="Description" rows="8" cols="40" placeholder="  What else do you wanna say? Comments?"></textarea>
+             </div>
+             <button type="submit" class="btn btn-success">Submit</button>
+           </form>
 
     </div>
     <!-- Bootstrap JS & jQuery-->
